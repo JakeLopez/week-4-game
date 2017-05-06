@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Crystal Collector</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body>
+    <meta charset="UTF-8">
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="text-center"> <strong> Crystal Collector!</strong></h1>
+            <p class="text-center">You will be given a random numeber at the start of the game.
+                <br> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+                <br> You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number.
+                <br> The vaule of each crystal is hiden from you untill you click on it.
+                <br> Each time when the game start, the game will change the values of each crystal</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-4">
+            <div class="panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title"> Number To Reach</h4>
+                </div>
+                <div class="panel-body">
+                    <div id="crystalCounter"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title"> Your Total Score</h4>
+                </div>
+                <div class="panel-body">
+                    <div id="yourScore"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-4">
+            <div class="panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title"> Score Board</h4>
+                </div>
+                <div class="panel-body">
+                    <div id="winCounter"></div>
+                    <div id="lossCounter"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">Pick Your Gem!</h4>
+                </div>
+                <div class="panel-body text-center">
+                    <img class="Gems" src="assets/images/BlueGem.png">
+                    <img class="Gems" src="assets/images/RedGem.png">
+                    <img class="Gems" src="assets/images/TurqoiseGem.png">
+                    <img class="Gems" src="assets/images/GreenGem.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
